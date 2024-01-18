@@ -52,6 +52,7 @@ background: #FFF;
 .heder-nav {
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heder-logo {
@@ -76,6 +77,7 @@ background: #FFF;
   text-transform: uppercase;
 }
 
+
 .header-list {
   display: flex;
   gap: 40px;
@@ -96,6 +98,24 @@ background: #FFF;
   color: #404bbf;
 }
 
+.current {
+  position: relative;
+  color: #404BBF;
+
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 2px;
+  background: #404BBF;
+  width: 100%;
+  height: 4px;
+}
+
+
 .address-list {
   display: flex;
   gap: 40px;
@@ -115,6 +135,7 @@ background: #FFF;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heder-address-kontakt:hover,
@@ -123,18 +144,24 @@ background: #FFF;
 }
 
 .hero {
-  background-color: #2e2f42;
-  width: auto;
-  height: 600px;
   flex-shrink: 0;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .container-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url(
+    ../images/hiro-fon.jpg
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1440px;
+  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 
@@ -204,6 +231,24 @@ background: #FFF;
     overflow: hidden;
 }
 
+.studio-list-border {
+  width: 264px;
+height: 112px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid  #8E8F99;
+background:#F4F4FD;
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.studio-ikons {
+
+}
+
 .studio-menu-headline {
   color: #2e2f42;
   font-size: 20px;
@@ -230,6 +275,8 @@ background: #FFF;
 .team-list {
   display: flex;
   gap: 24px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-headline {
@@ -253,8 +300,9 @@ background: #FFF;
 }
 
 .container-team-list-text {
-  padding: 32px 0;
+  padding: 32px 0 8px 0;
 }
+
 
 .team-menu-headline {
   color:  #2e2f42;
@@ -275,6 +323,13 @@ background: #FFF;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.team-social {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 32px;
+  justify-content: center;
 }
 
 .portfolio {
@@ -334,6 +389,16 @@ background: #FFF;
   padding: 100px 0;
 }
 
+.futer-container {
+  display: flex;
+  gap: 120px;
+}
+
+.futer-container-logo {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -363,4 +428,41 @@ background: #FFF;
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.futer-social-container {
+
+}
+
+.futer-list {
+  width: 40px;
+height: 40px;
+background-color: #4D5AE5;
+flex-shrink: 0;
+border-radius: 50%;
+position: relative;
+}
+
+.footer-text-social {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1,5; 
+  letter-spacing: 0.02em;
+}
+
+.futer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+
+}
+
+.cocial-ikons {
+  fill: #F4F4FD;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
