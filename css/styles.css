@@ -430,7 +430,9 @@ justify-content: center;
 
 .futer-container {
   display: flex;
+  align-items: baseline;
   gap: 120px;
+
 }
 
 .futer-container-logo {
@@ -467,6 +469,7 @@ justify-content: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-bottom: 16px;
 }
 
 .futer-social-container {
