@@ -47,6 +47,9 @@ background: #FFF;
 
 .container-header {
   display: flex;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16), 
+   0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .heder-nav {
@@ -91,6 +94,7 @@ background: #FFF;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0 24px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heder-menu:hover,
@@ -152,13 +156,12 @@ background: #FFF;
   flex-direction: column;
   align-items: center;
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url(
-    ../images/hiro-fon.jpg
-  );
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(
+    ../images/hiro-fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
+  max-width: 1440px;
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -194,8 +197,9 @@ background: #FFF;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   min-width: 169px;
-  height: 56px;
+  height: 56px; 
   border: none;
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -356,6 +360,11 @@ justify-content: center;
 
 .portfolio-list-menu {
   width: calc((100% - 48px) / 3); 
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-menu:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .container-portfolio-list-tex {
