@@ -149,9 +149,6 @@ background: #FFF;
 
 .hero {
   flex-shrink: 0;
-}
-
-.container-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,6 +162,10 @@ background: #FFF;
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
+}
+
+.container-hero {
+ 
 }
 
 
